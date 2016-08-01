@@ -1,0 +1,6 @@
+{
+  "name": "Omniauth Discord",
+  "tagline": "Discord OAuth2 Strategy for OmniAuth",
+  "body": "# OmniAuth Discord \r\n\r\nDiscord OAuth2 Strategy for OmniAuth.\r\n\r\nRead the Discord API documentation for more details: https://discordapp.com/developers/docs/topics/oauth2\r\n\r\n## Installing\r\n\r\nAdd to your `Gemfile`:\r\n\r\n```ruby\r\ngem 'omniauth-discord'\r\n```\r\n\r\nThen `bundle install`.\r\n\r\n## Usage\r\n\r\n`OmniAuth::Strategies::Discord` is simply a Rack middleware. Read the OmniAuth docs for detailed instructions: https://github.com/intridea/omniauth.\r\n\r\nHere's a quick example, adding the middleware to a Rails app in `config/initializers/omniauth.rb`:\r\n\r\n```ruby\r\nRails.application.config.middleware.use OmniAuth::Builder do\r\n  provider :discord, ENV['DISCORD_APPID'], ENV['DISCORD_SECRET']\r\nend\r\n```\r\n\r\n## Contributing\r\n\r\nBug reports and pull requests are welcome on GitHub at https://github.com/adaoraul/omniauth-discord.\r\n\r\n\r\n## License\r\n\r\nThe gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Omniauth Discord by adaoraul</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Omniauth Discord</h1>
+        <p>Discord OAuth2 Strategy for OmniAuth</p>
+
+        <p class="view"><a href="https://github.com/adaoraul/omniauth-discord">View the Project on GitHub <small>adaoraul/omniauth-discord</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/adaoraul/omniauth-discord/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/adaoraul/omniauth-discord/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/adaoraul/omniauth-discord">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="omniauth-discord" class="anchor" href="#omniauth-discord" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OmniAuth Discord</h1>
+
+<p>Discord OAuth2 Strategy for OmniAuth.</p>
+
+<p>Read the Discord API documentation for more details: <a href="https://discordapp.com/developers/docs/topics/oauth2">https://discordapp.com/developers/docs/topics/oauth2</a></p>
+
+<h2>
+<a id="installing" class="anchor" href="#installing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing</h2>
+
+<p>Add to your <code>Gemfile</code>:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">'</span>omniauth-discord<span class="pl-pds">'</span></span></pre></div>
+
+<p>Then <code>bundle install</code>.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p><code>OmniAuth::Strategies::Discord</code> is simply a Rack middleware. Read the OmniAuth docs for detailed instructions: <a href="https://github.com/intridea/omniauth">https://github.com/intridea/omniauth</a>.</p>
+
+<p>Here's a quick example, adding the middleware to a Rails app in <code>config/initializers/omniauth.rb</code>:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">Rails</span>.application.config.middleware.use <span class="pl-c1">OmniAuth</span>::<span class="pl-c1">Builder</span> <span class="pl-k">do</span>
+  provider <span class="pl-c1">:discord</span>, <span class="pl-c1">ENV</span>[<span class="pl-s"><span class="pl-pds">'</span>DISCORD_APPID<span class="pl-pds">'</span></span>], <span class="pl-c1">ENV</span>[<span class="pl-s"><span class="pl-pds">'</span>DISCORD_SECRET<span class="pl-pds">'</span></span>]
+<span class="pl-k">end</span></pre></div>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>Bug reports and pull requests are welcome on GitHub at <a href="https://github.com/adaoraul/omniauth-discord">https://github.com/adaoraul/omniauth-discord</a>.</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>The gem is available as open source under the terms of the <a href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/adaoraul">adaoraul</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
